@@ -12,5 +12,5 @@ model ExchangeRates {
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
   currencyCode String   @db.VarChar(16)
-  exchangeRate Decimal  @db.Decimal(21, 16)
+  exchangeRate Decimal  @db.Decimal(15, 6)
 }
